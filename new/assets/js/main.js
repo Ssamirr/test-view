@@ -110,42 +110,42 @@ $(document).ready(function () {
     document.querySelectorAll('.second-ul-category').forEach(function (e) {
         $(e).css({
             'width': ($(".first-ul-category").width() + 'px'),
-            'right':('-' + ($(".first-ul-category").width() + 1) +  'px')
+            'right': ('-' + ($(".first-ul-category").width() + 1) + 'px')
         });
     })
 
     document.querySelectorAll('.third-ul-category').forEach(function (e) {
         $(e).css({
             'width': ($(".first-ul-category").width() + 'px'),
-            'left':($(".first-ul-category").width() + 'px')
+            'left': ($(".first-ul-category").width() + 'px')
         });
     })
 
     document.querySelectorAll('.fourth-ul-category').forEach(function (e) {
         $(e).css({
             'width': ($(".first-ul-category").width() + 'px'),
-            'right': ( '-' + $(".first-ul-category").width()*3 + 'px')
+            'right': ('-' + $(".first-ul-category").width() * 3 + 'px')
         });
     })
 
     if ($(window).width() < 1265) {
 
-     }
+    }
 
     document.querySelector('.category-show').addEventListener('click', function () {
         if (document.querySelector('.header-category-menu').classList.contains('header-category-menu-show')) {
             document.querySelector('.header-category-menu').classList.remove('header-category-menu-show');
-            document.querySelector('.x-1').classList.remove('xx-1');
-            document.querySelector('.x-2').classList.remove('xx-2');
-            document.querySelector('.x-3').classList.remove('xx-3');
-            document.querySelector('.x-4').classList.remove('xx-4');
+            document.querySelector('.desktop-header').querySelector('.x-1').classList.remove('xx-1');
+            document.querySelector('.desktop-header').querySelector('.x-2').classList.remove('xx-2');
+            document.querySelector('.desktop-header').querySelector('.x-3').classList.remove('xx-3');
+            document.querySelector('.desktop-header').querySelector('.x-4').classList.remove('xx-4');
         }
         else {
             document.querySelector('.header-category-menu').classList.add('header-category-menu-show');
-            document.querySelector('.x-1').classList.add('xx-1');
-            document.querySelector('.x-2').classList.add('xx-2');
-            document.querySelector('.x-3').classList.add('xx-3');
-            document.querySelector('.x-4').classList.add('xx-4');
+            document.querySelector('.desktop-header').querySelector('.x-1').classList.add('xx-1');
+            document.querySelector('.desktop-header').querySelector('.x-2').classList.add('xx-2');
+            document.querySelector('.desktop-header').querySelector('.x-3').classList.add('xx-3');
+            document.querySelector('.desktop-header').querySelector('.x-4').classList.add('xx-4');
 
             document.querySelectorAll('.second-ul-category').forEach(function (e) {
                 e.classList.add('d-none');
@@ -154,7 +154,7 @@ $(document).ready(function () {
 
             document.querySelector('.second-ul-category').classList.add('d-block')
             document.querySelector('.second-ul-category').classList.remove('d-none')
-            
+
             document.querySelector('.list-first-category').classList.add('part-category-active');
             document.querySelector('.list-second-category').classList.add('part-category-li-active')
 
@@ -196,24 +196,24 @@ $(document).ready(function () {
 
 
 
-    document.querySelectorAll('.list-first-category-a').forEach(function(e){
-        e.onmouseover = function() {category_detail(this)}
+    document.querySelectorAll('.list-first-category-a').forEach(function (e) {
+        e.onmouseover = function () { category_detail(this) }
     })
 
     function category_detail_second_list(x) {
-        
-        document.querySelectorAll('.list-first-category').forEach(function(e){
-            
+
+        document.querySelectorAll('.list-first-category').forEach(function (e) {
+
             e.classList.remove('part-category-active');
         })
         x.closest('.list-first-category').classList.add('part-category-active');
 
-        document.querySelectorAll('.list-second-category').forEach(function(e){
+        document.querySelectorAll('.list-second-category').forEach(function (e) {
             e.classList.remove('part-category-li-active');
         })
         x.closest('.list-second-category').classList.add('part-category-li-active');
-        
-        document.querySelectorAll('.third-ul-category').forEach(function(e){
+
+        document.querySelectorAll('.third-ul-category').forEach(function (e) {
             e.classList.add('d-none');
             e.classList.remove('d-block');
         })
@@ -222,8 +222,24 @@ $(document).ready(function () {
 
     }
 
-    document.querySelectorAll('.list-second-category-a').forEach(function(e){
-        e.onmouseover = function() {category_detail_second_list(this)}
+    document.querySelectorAll('.list-second-category-a').forEach(function (e) {
+        e.onmouseover = function () { category_detail_second_list(this) }
+    })
+
+    document.querySelector('.mobile-menu').addEventListener('click', function () {
+        if (document.querySelector('.mobile-menu').querySelector('.x-1').classList.contains('xx-1')) {
+            document.querySelector('.mobile-menu').querySelector('.x-1').classList.remove('xx-1');
+            document.querySelector('.mobile-menu').querySelector('.x-2').classList.remove('xx-2');
+            document.querySelector('.mobile-menu').querySelector('.x-3').classList.remove('xx-3');
+            document.querySelector('.mobile-menu').querySelector('.x-4').classList.remove('xx-4');
+        }
+        else {
+            document.querySelector('.mobile-menu').querySelector('.x-1').classList.add('xx-1');
+            document.querySelector('.mobile-menu').querySelector('.x-2').classList.add('xx-2');
+            document.querySelector('.mobile-menu').querySelector('.x-3').classList.add('xx-3');
+            document.querySelector('.mobile-menu').querySelector('.x-4').classList.add('xx-4');
+        }
+
     })
 
 
