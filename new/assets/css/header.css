@@ -18,7 +18,6 @@
 .top-header-left-div{
     flex: 1 1 0%;
     margin-left: 4px;
-    max-width: calc(100% - 116px);
 }
 
 .select-region,.header-right-a-span{
@@ -240,10 +239,10 @@
 
 .second-ul-category{
     position: absolute;
-    left: 350px;
+    /* left: 350px; */
     /* width: calc(100%/4); */
     padding-bottom: 40px;
-    top: 16px;
+    top: 0px;
     height:100%;
 }
 
@@ -320,6 +319,10 @@
 
 .mobile-search{
     margin-top: 10px;
+}
+
+.first-ul-category{
+    position: relative;
 }
 
 @media only screen and (max-width: 991px){

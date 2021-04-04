@@ -109,21 +109,28 @@ $(document).ready(function () {
 
     document.querySelectorAll('.second-ul-category').forEach(function (e) {
         $(e).css({
-            'width': ($(".first-ul-category").width() + 'px')
+            'width': ($(".first-ul-category").width() + 'px'),
+            'right':('-' + ($(".first-ul-category").width() + 1) +  'px')
         });
     })
 
     document.querySelectorAll('.third-ul-category').forEach(function (e) {
         $(e).css({
-            'width': ($(".first-ul-category").width() + 'px')
+            'width': ($(".first-ul-category").width() + 'px'),
+            'left':($(".first-ul-category").width() + 'px')
         });
     })
 
     document.querySelectorAll('.fourth-ul-category').forEach(function (e) {
         $(e).css({
-            'width': ($(".first-ul-category").width() + 'px')
+            'width': ($(".first-ul-category").width() + 'px'),
+            'right': ( '-' + $(".first-ul-category").width()*3 + 'px')
         });
     })
+
+    if ($(window).width() < 1265) {
+
+     }
 
     document.querySelector('.category-show').addEventListener('click', function () {
         if (document.querySelector('.header-category-menu').classList.contains('header-category-menu-show')) {
@@ -139,6 +146,15 @@ $(document).ready(function () {
             document.querySelector('.x-2').classList.add('xx-2');
             document.querySelector('.x-3').classList.add('xx-3');
             document.querySelector('.x-4').classList.add('xx-4');
+
+            document.querySelectorAll('.second-ul-category').forEach(function (e) {
+                e.classList.add('d-none');
+                e.classList.remove('d-block');
+            })
+
+            document.querySelector('.second-ul-category').classList.add('d-block')
+            document.querySelector('.second-ul-category').classList.remove('d-none')
+            
             document.querySelector('.list-first-category').classList.add('part-category-active');
             document.querySelector('.list-second-category').classList.add('part-category-li-active')
 
