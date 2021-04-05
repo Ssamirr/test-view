@@ -226,20 +226,26 @@ $(document).ready(function () {
         e.onmouseover = function () { category_detail_second_list(this) }
     })
 
-    document.querySelector('.mobile-menu').addEventListener('click', function () {
-        if (document.querySelector('.mobile-menu').querySelector('.x-1').classList.contains('xx-1')) {
-            document.querySelector('.mobile-menu').querySelector('.x-1').classList.remove('xx-1');
-            document.querySelector('.mobile-menu').querySelector('.x-2').classList.remove('xx-2');
-            document.querySelector('.mobile-menu').querySelector('.x-3').classList.remove('xx-3');
-            document.querySelector('.mobile-menu').querySelector('.x-4').classList.remove('xx-4');
-        }
-        else {
-            document.querySelector('.mobile-menu').querySelector('.x-1').classList.add('xx-1');
-            document.querySelector('.mobile-menu').querySelector('.x-2').classList.add('xx-2');
-            document.querySelector('.mobile-menu').querySelector('.x-3').classList.add('xx-3');
-            document.querySelector('.mobile-menu').querySelector('.x-4').classList.add('xx-4');
-        }
+    document.querySelector('.mobile-menu-icon').addEventListener('click', function () {
+        document.querySelector('.mobile-menu-list').classList.add('mobile-menu-list-show');
+    })
 
+    document.querySelector('.mobile-exit-icon').addEventListener('click', function () {
+        document.querySelector('.mobile-menu-list').classList.remove('mobile-menu-list-show');
+    })
+
+    document.querySelectorAll('.first-list-link').forEach(function(e){
+        e.addEventListener('click', function () {
+            console.log('2')
+        e.closest('.ul-menu-list-first').querySelector('.mobile-menu-second-list').classList.add('mobile-menu-second-list-show');
+    })
+    }) 
+
+    document.querySelectorAll('.mobile-left-icon').forEach(function(e){
+        e.addEventListener('click',function(){
+            console.log(this.closest('.mobile-menu-second-list'))
+            this.closest('.mobile-menu-second-list').classList.remove('mobile-menu-second-list-show');
+        })
     })
 
 
