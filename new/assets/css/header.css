@@ -241,7 +241,6 @@
     position: absolute;
     /* left: 350px; */
     /* width: calc(100%/4); */
-    padding-bottom: 40px;
     top: 0px;
     height:100%;
 }
@@ -360,6 +359,7 @@
     opacity:1;
     visibility: visible;
     max-height: 5000px;
+    z-index: 2000;
 }
 
 .mobile-list-name{
@@ -385,6 +385,10 @@
 }
 
 .mobile-left-icon{
+    cursor: pointer;
+}
+
+.mobile-exit-icon{
     cursor: pointer;
 }
 

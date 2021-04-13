@@ -109,7 +109,7 @@
     opacity: 0.64;
 }
 
-.product-pricee{
+.product-pricee,.item-locationn-list-view{
     font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 600;
     line-height: 32px;
@@ -125,7 +125,8 @@
     text-decoration: none;
 }
 
-.productt-name{
+
+.productt-name,.productt-add-time{
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 24px;
     font-weight: 400;
@@ -138,6 +139,10 @@
     display: block;
     padding: 0px 16px 8px 16px;
     text-decoration: none;
+}
+
+.productt-add-time{
+    color: #8f8f8f !important; 
 }
 
 .itemm-carousel-style{

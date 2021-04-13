@@ -5,6 +5,15 @@ $(document).ready(function () {
     var header = document.getElementById("myHeader");
     var sticky = header.offsetTop;
 
+    // .................for-product-detail-page..........................
+    var product_right_side = document.getElementById("productt-right-sidee");
+    if (product_right_side) {
+        var sticky2 = product_right_side.offsetTop;
+        console.log(window.pageYOffset);
+        console.log(sticky2)
+    }
+
+
     function myFunction() {
 
         if (window.pageYOffset > sticky && !document.querySelector('.header-category-menu').classList.contains('header-category-menu-show')) {
@@ -12,6 +21,17 @@ $(document).ready(function () {
         } else {
             header.classList.remove("sticky");
         }
+
+        if (product_right_side) {
+            console.log(window.pageYOffset);
+            console.log(sticky2)
+            if (window.pageYOffset > sticky2-33) {
+                product_right_side.querySelector('.inside-product-right-side').classList.add("sticky_product_right_side");
+            } else {
+                product_right_side.querySelector('.inside-product-right-side').classList.remove("sticky_product_right_side");
+            }
+        }
+
     }
 
 
@@ -234,15 +254,15 @@ $(document).ready(function () {
         document.querySelector('.mobile-menu-list').classList.remove('mobile-menu-list-show');
     })
 
-    document.querySelectorAll('.first-list-link').forEach(function(e){
+    document.querySelectorAll('.first-list-link').forEach(function (e) {
         e.addEventListener('click', function () {
             console.log('2')
-        e.closest('.ul-menu-list-first').querySelector('.mobile-menu-second-list').classList.add('mobile-menu-second-list-show');
+            e.closest('.ul-menu-list-first').querySelector('.mobile-menu-second-list').classList.add('mobile-menu-second-list-show');
+        })
     })
-    }) 
 
-    document.querySelectorAll('.mobile-left-icon').forEach(function(e){
-        e.addEventListener('click',function(){
+    document.querySelectorAll('.mobile-left-icon').forEach(function (e) {
+        e.addEventListener('click', function () {
             console.log(this.closest('.mobile-menu-second-list'))
             this.closest('.mobile-menu-second-list').classList.remove('mobile-menu-second-list-show');
         })
