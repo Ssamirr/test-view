@@ -211,11 +211,11 @@
     .products-widthh {
     width: calc((100% - 16px)/2);
     }
-    .all-products .products-widthh:nth-child(2n) {
-        margin-right: 0px !important;
-    }
     .all-products .products-widthh:nth-child(3n) {
     margin-right: 16px !important;
+    }
+    .all-products .products-widthh:nth-child(2n) {
+        margin-right: 0px !important;
     }
 }	
 

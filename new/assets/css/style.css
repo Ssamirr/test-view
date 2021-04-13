@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 html,body,h1,h2,h3,h4,h5,h6,ul,li{
     margin: 0;
@@ -47,6 +55,22 @@ a{
     text-decoration: none !important;
 }
 
+::-webkit-input-placeholder {
+    opacity: 0.4; /* Firefox */
+  }
+
+::-moz-placeholder {
+    opacity: 0.4; /* Firefox */
+  }
+
+:-ms-input-placeholder {
+    opacity: 0.4; /* Firefox */
+  }
+
+::-ms-input-placeholder {
+    opacity: 0.4; /* Firefox */
+  }
+
 ::placeholder {
     opacity: 0.4; /* Firefox */
   }
@@ -69,7 +93,8 @@ a{
     width: 100%;
     z-index: 1000;
     background: white;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
   }
 
 .transition-page{
@@ -79,7 +104,9 @@ a{
 }
 
 .select-optionn select{
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background: #fafafa;
     border: 1px solid rgba(0,0,0,.1);
     height: 100%;
@@ -90,8 +117,12 @@ a{
 
 .select-optionn{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
 }
 
@@ -117,7 +148,8 @@ input{
 .checkboxes-multi{
     position: relative;
     background: white;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
     height: 250px;
     overflow-y: scroll;
     z-index: 200;
@@ -125,8 +157,12 @@ input{
 }
 
 .checkboxes-multi label{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .checkboxes-multi input{
@@ -153,6 +189,8 @@ input{
     color: rgb(112, 146, 254);
     border: 1px solid rgb(112, 146, 254);
     border-radius: 5px;
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
     transition: 0.2s ease all;
 }
 
