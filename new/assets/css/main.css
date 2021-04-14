@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .carousel-back-img{
     position: relative;
     width: 100%;
@@ -10,11 +17,19 @@
 }
 
 .carousel-back-img a{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    -moz-box-pack: end;
-    justify-content: flex-end;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 100%;
     height: 100%;
     color: inherit;
@@ -27,12 +42,15 @@
     font-weight: 600;
     line-height: 32px;
     font-size: 20px;
+    -webkit-transition: color 0.4s ease 0s;
+    -o-transition: color 0.4s ease 0s;
     transition: color 0.4s ease 0s;
     color: rgba(51, 51, 51, 0.8);
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     display: block;
 }
 
@@ -45,7 +63,8 @@
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     display: block;
 }
 
@@ -97,8 +116,12 @@
     /* width: 40px; */
     background: white;
     padding: 2px 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     bottom: -14px;
     right: 12px;
     border-radius: 50px; 
@@ -114,12 +137,15 @@
     font-weight: 600;
     line-height: 32px;
     font-size: 16px;
+    -webkit-transition: color 0.4s ease 0s;
+    -o-transition: color 0.4s ease 0s;
     transition: color 0.4s ease 0s;
     color: rgb(51, 51, 51);
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     display: block;
     padding: 8px 16px 0px 16px;
     text-decoration: none;
@@ -135,7 +161,8 @@
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     display: block;
     padding: 0px 16px 8px 16px;
     text-decoration: none;
@@ -148,12 +175,16 @@
 .itemm-carousel-style{
     background: white;
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
     transition: 0.2s ease all;
 }
 
 .itemm-carousel-style:hover{
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
 }
 
 .products-widthh{

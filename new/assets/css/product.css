@@ -1,6 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .productt-add-save{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: transparent;
     border: none;
 }
@@ -27,7 +38,8 @@
     text-align: left;
     font-size: 10px;
     text-shadow: none;
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
 }
 
 #wowslider-container1 .ws_images {
@@ -62,6 +74,8 @@
 .lSSlideOuter .lSPager.lSGallery li a{
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -75,23 +89,35 @@
 .lSNext span, .lSPrev span{
     background: white;
     border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .lSPrev svg{
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 .productt-detaill{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 16px;
     padding: 30px 0px;
     border-bottom: 1px solid rgba(0,0,0,.1);
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -108,6 +134,8 @@
 
 
 .product-detail-necessary{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 16px;
     margin-bottom: 20px;
@@ -136,6 +164,8 @@
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(255, 255, 255);
     border: none;
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
     transition: 0.2s ease all;
     margin-right: 10px;
 }
@@ -151,6 +181,8 @@
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(255, 255, 255);
     border: none;
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
     transition: 0.2s ease all;
     width: 100%;
     height: 40px;
@@ -171,6 +203,8 @@
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(112, 146, 254);
     border: none;
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
     transition: 0.2s ease all;
 }
 
@@ -195,6 +229,8 @@
     width: 48px;
     height: 48px;
     border-radius: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -211,7 +247,8 @@
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     margin-left: 10px;
 }
 
@@ -220,8 +257,12 @@
 }
 
 .product-ownerr{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 10px;
 }
 
@@ -233,6 +274,7 @@
 }
 
 .inside-product-right-side{
+    position: -webkit-sticky;
     position: sticky;
     top: 64px;
 }
