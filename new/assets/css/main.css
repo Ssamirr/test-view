@@ -166,7 +166,7 @@
 }
 
 .all-products .products-widthh:nth-child(4n){
-    margin-right: 0px !important;
+    margin-right: 0px;
 }
 
 @media only screen and (max-width: 1200px){
@@ -177,10 +177,10 @@
     width: calc((100% - 32px)/3);
     }
     .all-products .products-widthh:nth-child(4n) {
-        margin-right: 16px !important;
+        margin-right: 16px;
     }
     .all-products .products-widthh:nth-child(3n) {
-    margin-right: 0px !important;
+    margin-right: 0px;
     }
 }	
 
@@ -212,11 +212,16 @@
     width: calc((100% - 16px)/2);
     }
     .all-products .products-widthh:nth-child(3n) {
-    margin-right: 16px !important;
+    margin-right: 16px ;
     }
     .all-products .products-widthh:nth-child(2n) {
-        margin-right: 0px !important;
+        margin-right: 0px;
     }
+    .products-widthh-margin{
+        margin-right: 0px !important;
+        width: 100% !important; 
+    }
+    
 }	
 
 @media only screen and (max-width: 649px){
