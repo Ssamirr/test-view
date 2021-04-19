@@ -200,6 +200,45 @@
     margin-right: 0px;
 }
 
+.mobile-create-product div{
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mobile-create-product{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px;
+    transition: 0.5s ease all;
+    display: none;
+}
+
+.mobile-create-product-none{
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0px;
+}
+
+.mobile-create-product a{
+    background: #7092fe;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 8px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    transition: 0.2s ease all;
+}
+
 @media only screen and (max-width: 1200px){
 	.mobile-carousel{
 		max-width: 608px !important;
@@ -221,6 +260,9 @@
     }
     .carousel-back-img{
         height: 168px;
+    }
+    .mobile-create-product{
+       display: block;
     }
 }	
 

@@ -5,6 +5,10 @@
 * Browsers: last 4 version
 */
 
+html{
+    overflow-x:visible !important;
+}
+
 .mobile-category-filter svg{
     padding: 4px;
     border-radius: 8px;

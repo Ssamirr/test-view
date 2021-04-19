@@ -17,11 +17,12 @@ html,body,h1,h2,h3,h4,h5,h6,ul,li{
     vertical-align: baseline;
 }
 body{
+    /* font-family: 'Open Sans', -apple-system, 'Roboto', 'Helvetica Neue', sans-serif; */
     font-family: 'Open Sans', -apple-system, 'Roboto', 'Helvetica Neue', sans-serif;
     color: #333333;
     font-size: 14px;
     line-height: 1.33;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 html{
@@ -139,10 +140,12 @@ a{
     border-radius: 5px;
 }
 
-input{
+input,textarea{
     border:1px solid rgb(235, 235, 235);
     border-radius: 5px;
     padding: 4px;
+    font-size: 14px;
+    font-family: 'Open Sans', -apple-system, 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
 .checkboxes-multi{

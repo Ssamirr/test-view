@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Category</title>
+    <title>Select category</title>
     <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/category.css">
+    <link rel="stylesheet" href="assets/css/product-create.css">
     <link rel="stylesheet" href="assets/css/carousel-style.css">
 
     <script src='assets/js/font-awesome.js'></script>
@@ -544,551 +544,1120 @@
     </header>
 
     <div class="for-page-background">
-
-        <div class="transition-page d-flex size-desktop">
-            <div>Əsas Səhifə</div>
-            <div style="opacity: 0.6"> <span class="ml-1 mr-1">/</span> Avtomobillər</div>
-        </div>
-
-
-        <section class="mt-4">
-            <div class="row size-desktop">
-                <div class="col-lg-9 col-12 p-0">
-                    <div class="d-flex justify-content-between align-items-center mb-2" style="height: 40px;">
-                        <div class="h-100 specific-topicc">
-                            <h2>Avtomobillər </h2>
-                        </div>
-                        <div class="h-100 d-lg-block d-none">
-                            <div class="h-100 d-flex align-items-center">
-                                <div class="h-100 select-optionn">
-                                    <select class="h-100">
-                                        <option value="Varsayılan">Varsayılan</option>
-                                        <option value="Yeni">Yeni</option>
-                                        <option value="Qiymətə görə ">Qiymətə görə</option>
-                                        <option disabled="true" value="По удаленности">По удаленности</option>
-                                    </select>
-                                    <!-- <i class="fa fa-caret-down "></i> -->
-                                    <svg class="down-iconn" width="24" height="24" viewBox="0 0 24 24">
-                                        <path d="M11.986 13.49l4.236-4.512.729.685-4.965 5.288-4.964-5.288.729-.685z"
-                                            fill="#333" fill-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="ml-2 items-view-four">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" class="">
-                                        <path fill="#7092FE" fill-rule="evenodd"
-                                            d="M9 13a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4zm10 0a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4zM9 14H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1zm10 0h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1zM9 3a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4zm10 0a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4zM9 4H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm10 0h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z">
-                                        </path>
-                                    </svg>
-                                </div>
-
-                                <div class="ml-2 items-view-one">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" class="">
-                                        <path fill="#333" fill-rule="evenodd"
-                                            d="M6.077 14c.669 0 .911.07 1.156.2.244.131.436.323.567.567.13.245.2.487.2 1.156v1.154c0 .669-.07.911-.2 1.156a1.371 1.371 0 0 1-.567.567c-.245.13-.487.2-1.156.2H4.923c-.669 0-.911-.07-1.156-.2a1.363 1.363 0 0 1-.567-.567c-.13-.245-.2-.487-.2-1.156v-1.154c0-.669.07-.911.2-1.156.131-.244.323-.436.567-.567.245-.13.487-.2 1.156-.2h1.154zm.14 1H4.924c-.459 0-.57.022-.684.082a.364.364 0 0 0-.157.157c-.054.1-.077.2-.081.543L4 17.077c0 .459.022.57.082.684.038.07.087.12.157.157.113.06.225.082.684.082h1.154c.459 0 .57-.022.684-.082a.364.364 0 0 0 .157-.157c.06-.113.082-.225.082-.684v-1.154c0-.459-.022-.57-.082-.684a.364.364 0 0 0-.157-.157c-.1-.054-.2-.077-.543-.081zM21 16v1H10v-1h11zM6.077 5c.669 0 .911.07 1.156.2.244.131.436.323.567.567.13.245.2.487.2 1.156v1.154c0 .669-.07.911-.2 1.156a1.371 1.371 0 0 1-.567.567c-.245.13-.487.2-1.156.2H4.923c-.669 0-.911-.07-1.156-.2a1.363 1.363 0 0 1-.567-.567c-.13-.245-.2-.487-.2-1.156V6.923c0-.669.07-.911.2-1.156.131-.244.323-.436.567-.567.245-.13.487-.2 1.156-.2h1.154zm.14 1H4.924c-.459 0-.57.022-.684.082a.364.364 0 0 0-.157.157c-.054.1-.077.2-.081.543L4 8.077c0 .459.022.57.082.684.038.07.087.12.157.157.113.06.225.082.684.082h1.154c.459 0 .57-.022.684-.082a.364.364 0 0 0 .157-.157c.06-.113.082-.225.082-.684V6.923c0-.459-.022-.57-.082-.684a.364.364 0 0 0-.157-.157c-.1-.054-.2-.077-.543-.081zM21 7v1H10V7h11z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-center d-lg-none h-100 mobile-category-filter">
-                            <svg width="24" height="24" viewBox="0 0 24 24" class="">
-                                <path fill="currentColor" fill-rule="evenodd"
-                                    d="M17 17v-1.077c0-.459-.022-.57-.082-.684a.364.364 0 0 0-.157-.157c-.113-.06-.225-.082-.684-.082h-1.154c-.459 0-.57.022-.684.082a.364.364 0 0 0-.157.157c-.06.113-.082.225-.082.684v1.154c0 .459.022.57.082.684.038.07.087.12.157.157.113.06.225.082.684.082h1.154c.459 0 .57-.022.684-.082a.364.364 0 0 0 .157-.157c.06-.113.082-.225.082-.684V17zm1-1h3v1h-3v.077c0 .669-.07.911-.2 1.156a1.371 1.371 0 0 1-.567.567c-.245.13-.487.2-1.156.2h-1.154c-.669 0-.911-.07-1.156-.2a1.363 1.363 0 0 1-.567-.567c-.13-.245-.2-.487-.2-1.156V17H3v-1h10v-.077c0-.669.07-.911.2-1.156.131-.244.323-.436.567-.567.245-.13.487-.2 1.156-.2h1.154c.669 0 .911.07 1.156.2.244.131.436.323.567.567.13.245.2.487.2 1.156V16zM6 7v-.077c0-.669.07-.911.2-1.156.131-.244.323-.436.567-.567.245-.13.487-.2 1.156-.2h1.154c.669 0 .911.07 1.156.2.244.131.436.323.567.567.13.245.2.487.2 1.156V7h10v1H11v.077c0 .669-.07.911-.2 1.156a1.371 1.371 0 0 1-.567.567c-.245.13-.487.2-1.156.2H7.923c-.669 0-.911-.07-1.156-.2a1.363 1.363 0 0 1-.567-.567c-.13-.245-.2-.487-.2-1.156V8H3V7h3zm4 1V6.923c0-.459-.022-.57-.082-.684a.364.364 0 0 0-.157-.157C9.648 6.022 9.536 6 9.077 6H7.923c-.459 0-.57.022-.684.082a.364.364 0 0 0-.157.157c-.06.113-.082.225-.082.684v1.154c0 .459.022.57.082.684.038.07.087.12.157.157.113.06.225.082.684.082h1.154c.459 0 .57-.022.684-.082a.364.364 0 0 0 .157-.157c.06-.113.082-.225.082-.684V8z">
-                                </path>
-                            </svg>
-                        </div>
-
+        <section class="pt-2">
+            <div class="size-desktop">
+                    <div class="mb-2 specific-topicc d-flex d-md-none align-items-center justify-content-center">
+                        <h2 style="font-weight: 400;font-size: 22px;">Yeni elan</h2>
                     </div>
-                    <div class="d-flex flex-wrap all-products">
-                        <div class="products-widthh" style="">
-                            <div class="itemm-carousel-style view-list-style" style="">
-                                <div class="position-relative w-100 h-100 itemm-images">
-                                    <a class="" href="">
-                                        <div class="position-relative">
-                                            <img class="w-100"
-                                                style="border-top-left-radius: 8px;border-top-right-radius:8px;"
-                                                src="https://cdn0.youla.io/files/images/360_360/60/4d/604dd9a8a4532d021862d814-1.jpg"
-                                                alt="">
-                                            <div class="item-locationn">Bakı</div>
-                                        </div>
-                                    </a>
-                                    <div class="item-for-save">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                                            class="sc-pleCs iNeJVh">
-                                            <path
-                                                d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a class="additional-info-mobile w-100" href="">
-                                    <div>
-                                        <div class="product-pricee">699 000 AZN</div>
-                                        <div class="productt-name">Geely Emgrand EC7, 2013</div>
-                                        <div class="productt-add-time d-none">Bu gün 17:16</div>
-                                    </div>
-                                    <div class="justify-content-between location-save-list-view d-none">
-                                        <div class="item-locationn-list-view ">Bakı</div>
-                                        <div class="list-save-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="sc-pleCs iNeJVh">
-                                                <path d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
+                <div class="mb-2 specific-topicc">
+                    <h2>Kateqoriya seçin</h2>
+                </div>
+                <div class="all-new-categoriess d-md-block d-none">
+                    <div class="single-new-categoryy d-flex">
+                        <div class="single-new-category-icon">
+                            <span>
+                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                            </span>
+                        </div>
+                        <div class="ml-3" style="border-bottom: 1px solid rgba(0,0,0,.1);padding: 10px 0px;">
+                            <div class="single-new-category-header">
+                                <span>Elektronika və əşyalar</span>
+                            </div>
+                            <div class="single-new-category-categories">
+                                <ul class="d-flex flex-wrap">
+                                    <li>
+                                        <a href="">Qadın qarderobu </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Kişi qarderobu </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Uşaq qarderobu </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Uşaq məhsulları</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Telefonlar və planşetlər </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Telefonlar və planşetlər </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Uşaq qarderobu </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Telefonlar və planşetlər </a>
+                                    </li>
 
+
+                                </ul>
                             </div>
                         </div>
-
-                        <div class="products-widthh" style="">
-                            <div class="itemm-carousel-style view-list-style" style="">
-                                <div class="position-relative w-100 h-100 itemm-images">
-                                    <a class="" href="">
-                                        <div class="position-relative">
-                                            <img class="w-100"
-                                                style="border-top-left-radius: 8px;border-top-right-radius:8px;"
-                                                src="https://cdn0.youla.io/files/images/360_360/60/4d/604dd9a8a4532d021862d814-1.jpg"
-                                                alt="">
-                                            <div class="item-locationn">Bakı</div>
-                                        </div>
-                                    </a>
-                                    <div class="item-for-save">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                                            class="sc-pleCs iNeJVh">
-                                            <path
-                                                d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a class="additional-info-mobile w-100" href="">
-                                    <div>
-                                        <div class="product-pricee">699 000 AZN</div>
-                                        <div class="productt-name">Geely Emgrand EC7, 2013</div>
-                                        <div class="productt-add-time d-none">Bu gün 17:16</div>
-                                    </div>
-                                    <div class="justify-content-between location-save-list-view d-none">
-                                        <div class="item-locationn-list-view ">Bakı</div>
-                                        <div class="list-save-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="sc-pleCs iNeJVh">
-                                                <path d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="products-widthh" style="">
-                            <div class="itemm-carousel-style view-list-style" style="">
-                                <div class="position-relative w-100 h-100 itemm-images">
-                                    <a class="" href="">
-                                        <div class="position-relative">
-                                            <img class="w-100"
-                                                style="border-top-left-radius: 8px;border-top-right-radius:8px;"
-                                                src="https://cdn0.youla.io/files/images/360_360/60/4d/604dd9a8a4532d021862d814-1.jpg"
-                                                alt="">
-                                            <div class="item-locationn">Bakı</div>
-                                        </div>
-                                    </a>
-                                    <div class="item-for-save">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                                            class="sc-pleCs iNeJVh">
-                                            <path
-                                                d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a class="additional-info-mobile w-100" href="">
-                                    <div>
-                                        <div class="product-pricee">699 000 AZN</div>
-                                        <div class="productt-name">Geely Emgrand EC7, 2013</div>
-                                        <div class="productt-add-time d-none">Bu gün 17:16</div>
-                                    </div>
-                                    <div class="justify-content-between location-save-list-view d-none">
-                                        <div class="item-locationn-list-view ">Bakı</div>
-                                        <div class="list-save-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="sc-pleCs iNeJVh">
-                                                <path d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="products-widthh" style="">
-                            <div class="itemm-carousel-style view-list-style" style="">
-                                <div class="position-relative w-100 h-100 itemm-images">
-                                    <a class="" href="">
-                                        <div class="position-relative">
-                                            <img class="w-100"
-                                                style="border-top-left-radius: 8px;border-top-right-radius:8px;"
-                                                src="https://cdn0.youla.io/files/images/360_360/60/4d/604dd9a8a4532d021862d814-1.jpg"
-                                                alt="">
-                                            <div class="item-locationn">Bakı</div>
-                                        </div>
-                                    </a>
-                                    <div class="item-for-save">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                                            class="sc-pleCs iNeJVh">
-                                            <path
-                                                d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a class="additional-info-mobile w-100" href="">
-                                    <div>
-                                        <div class="product-pricee">699 000 AZN</div>
-                                        <div class="productt-name">Geely Emgrand EC7, 2013</div>
-                                        <div class="productt-add-time d-none">Bu gün 17:16</div>
-                                    </div>
-                                    <div class="justify-content-between location-save-list-view d-none">
-                                        <div class="item-locationn-list-view ">Bakı</div>
-                                        <div class="list-save-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="sc-pleCs iNeJVh">
-                                                <path d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="products-widthh" style="">
-                            <div class="itemm-carousel-style view-list-style" style="">
-                                <div class="position-relative w-100 h-100 itemm-images">
-                                    <a class="" href="">
-                                        <div class="position-relative">
-                                            <img class="w-100"
-                                                style="border-top-left-radius: 8px;border-top-right-radius:8px;"
-                                                src="https://cdn0.youla.io/files/images/360_360/60/4d/604dd9a8a4532d021862d814-1.jpg"
-                                                alt="">
-                                            <div class="item-locationn">Bakı</div>
-                                        </div>
-                                    </a>
-                                    <div class="item-for-save">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                                            class="sc-pleCs iNeJVh">
-                                            <path
-                                                d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a class="additional-info-mobile w-100" href="">
-                                    <div>
-                                        <div class="product-pricee">699 000 AZN</div>
-                                        <div class="productt-name">Geely Emgrand EC7, 2013</div>
-                                        <div class="productt-add-time d-none">Bu gün 17:16</div>
-                                    </div>
-                                    <div class="justify-content-between location-save-list-view d-none">
-                                        <div class="item-locationn-list-view ">Bakı</div>
-                                        <div class="list-save-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="sc-pleCs iNeJVh">
-                                                <path d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="products-widthh" style="">
-                            <div class="itemm-carousel-style view-list-style" style="">
-                                <div class="position-relative w-100 h-100 itemm-images">
-                                    <a class="" href="">
-                                        <div class="position-relative">
-                                            <img class="w-100"
-                                                style="border-top-left-radius: 8px;border-top-right-radius:8px;"
-                                                src="https://cdn0.youla.io/files/images/360_360/60/4d/604dd9a8a4532d021862d814-1.jpg"
-                                                alt="">
-                                            <div class="item-locationn">Bakı</div>
-                                        </div>
-                                    </a>
-                                    <div class="item-for-save">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                                            class="sc-pleCs iNeJVh">
-                                            <path
-                                                d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a class="additional-info-mobile w-100" href="">
-                                    <div>
-                                        <div class="product-pricee">699 000 AZN</div>
-                                        <div class="productt-name">Geely Emgrand EC7, 2013</div>
-                                        <div class="productt-add-time d-none">Bu gün 17:16</div>
-                                    </div>
-                                    <div class="justify-content-between location-save-list-view d-none">
-                                        <div class="item-locationn-list-view ">Bakı</div>
-                                        <div class="list-save-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="sc-pleCs iNeJVh">
-                                                <path d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="products-widthh" style="">
-                            <div class="itemm-carousel-style view-list-style" style="">
-                                <div class="position-relative w-100 h-100 itemm-images">
-                                    <a class="" href="">
-                                        <div class="position-relative">
-                                            <img class="w-100"
-                                                style="border-top-left-radius: 8px;border-top-right-radius:8px;"
-                                                src="https://cdn0.youla.io/files/images/360_360/60/4d/604dd9a8a4532d021862d814-1.jpg"
-                                                alt="">
-                                            <div class="item-locationn">Bakı</div>
-                                        </div>
-                                    </a>
-                                    <div class="item-for-save">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                                            class="sc-pleCs iNeJVh">
-                                            <path
-                                                d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a class="additional-info-mobile w-100" href="">
-                                    <div>
-                                        <div class="product-pricee">699 000 AZN</div>
-                                        <div class="productt-name">Geely Emgrand EC7, 2013</div>
-                                        <div class="productt-add-time d-none">Bu gün 17:16</div>
-                                    </div>
-                                    <div class="justify-content-between location-save-list-view d-none">
-                                        <div class="item-locationn-list-view ">Bakı</div>
-                                        <div class="list-save-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="sc-pleCs iNeJVh">
-                                                <path d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="products-widthh" style="">
-                            <div class="itemm-carousel-style view-list-style" style="">
-                                <div class="position-relative w-100 h-100 itemm-images">
-                                    <a class="" href="">
-                                        <div class="position-relative">
-                                            <img class="w-100"
-                                                style="border-top-left-radius: 8px;border-top-right-radius:8px;"
-                                                src="https://cdn0.youla.io/files/images/360_360/60/4d/604dd9a8a4532d021862d814-1.jpg"
-                                                alt="">
-                                            <div class="item-locationn">Bakı</div>
-                                        </div>
-                                    </a>
-                                    <div class="item-for-save">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                                            class="sc-pleCs iNeJVh">
-                                            <path
-                                                d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a class="additional-info-mobile w-100" href="">
-                                    <div>
-                                        <div class="product-pricee">699 000 AZN</div>
-                                        <div class="productt-name">Geely Emgrand EC7, 2013</div>
-                                        <div class="productt-add-time d-none">Bu gün 17:16</div>
-                                    </div>
-                                    <div class="justify-content-between location-save-list-view d-none">
-                                        <div class="item-locationn-list-view ">Bakı</div>
-                                        <div class="list-save-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="sc-pleCs iNeJVh">
-                                                <path d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="products-widthh" style="">
-                            <div class="itemm-carousel-style view-list-style" style="">
-                                <div class="position-relative w-100 h-100 itemm-images">
-                                    <a class="" href="">
-                                        <div class="position-relative">
-                                            <img class="w-100"
-                                                style="border-top-left-radius: 8px;border-top-right-radius:8px;"
-                                                src="https://cdn0.youla.io/files/images/360_360/60/4d/604dd9a8a4532d021862d814-1.jpg"
-                                                alt="">
-                                            <div class="item-locationn">Bakı</div>
-                                        </div>
-                                    </a>
-                                    <div class="item-for-save">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                                            class="sc-pleCs iNeJVh">
-                                            <path
-                                                d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a class="additional-info-mobile w-100" href="">
-                                    <div>
-                                        <div class="product-pricee">699 000 AZN</div>
-                                        <div class="productt-name">Geely Emgrand EC7, 2013</div>
-                                        <div class="productt-add-time d-none">Bu gün 17:16</div>
-                                    </div>
-                                    <div class="justify-content-between location-save-list-view d-none">
-                                        <div class="item-locationn-list-view ">Bakı</div>
-                                        <div class="list-save-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="sc-pleCs iNeJVh">
-                                                <path d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="products-widthh" style="">
-                            <div class="itemm-carousel-style view-list-style" style="">
-                                <div class="position-relative w-100 h-100 itemm-images">
-                                    <a class="" href="">
-                                        <div class="position-relative">
-                                            <img class="w-100"
-                                                style="border-top-left-radius: 8px;border-top-right-radius:8px;"
-                                                src="https://cdn0.youla.io/files/images/360_360/60/4d/604dd9a8a4532d021862d814-1.jpg"
-                                                alt="">
-                                            <div class="item-locationn">Bakı</div>
-                                        </div>
-                                    </a>
-                                    <div class="item-for-save">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                                            class="sc-pleCs iNeJVh">
-                                            <path
-                                                d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a class="additional-info-mobile w-100" href="">
-                                    <div>
-                                        <div class="product-pricee">699 000 AZN</div>
-                                        <div class="productt-name">Geely Emgrand EC7, 2013</div>
-                                        <div class="productt-add-time d-none">Bu gün 17:16</div>
-                                    </div>
-                                    <div class="justify-content-between location-save-list-view d-none">
-                                        <div class="item-locationn-list-view ">Bakı</div>
-                                        <div class="list-save-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="sc-pleCs iNeJVh">
-                                                <path d="M12.333 5.673L12 5.97l-.333-.298C10.487 4.618 9.229 4 8 4 4.962 4 3 5.962 3 9c0 4.01 3.244 7.656 8.842 10.975a.4.4 0 0 0 .326-.004C17.772 16.615 21 12.996 21 9c0-3.038-1.962-5-5-5-1.229 0-2.488.618-3.667 1.673zM16 3c3.59 0 6 2.41 6 6 0 4.452-3.44 8.308-9.311 11.824-.394.246-.98.246-1.366.006C5.46 17.353 2 13.466 2 9c0-3.59 2.41-6 6-6 1.39 0 2.746.61 4 1.641C13.254 3.61 14.61 3 16 3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-
-
-
                     </div>
+                    <div class="single-new-categoryy d-flex">
+                        <div class="single-new-category-icon">
+                            <span>
+                                <img class="w-100 h-100" src="assets/images/icon-cat-services5x.png" alt="">
+                            </span>
+                        </div>
+                        <div class="ml-3" style="border-bottom: 1px solid rgba(0,0,0,.1);padding: 10px 0px;">
+                            <div class="single-new-category-header">
+                                <span>Предложить свои услуги</span>
+                            </div>
+                            <div class="single-new-category-categories">
+                                <ul class="d-flex flex-wrap">
+                                    <li>
+                                        <a href="">Обучение</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Мастер на час</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Красота и здоровье</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Ремонт и строительство</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Компьютерные услуги </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Деловые услуги</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Автоуслуги</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Уход за животными</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Организация праздников</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Уборка</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Другое</a>
+                                    </li>
+                                    <li>
+                                            <a href="">Уборка</a>
+                                        </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-new-categoryy d-flex">
+                            <div class="single-new-category-icon">
+                                <span>
+                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                </span>
+                            </div>
+                            <div class="ml-3" style="border-bottom: 1px solid rgba(0,0,0,.1);padding: 10px 0px;">
+                                <div class="single-new-category-header">
+                                    <span>Elektronika və əşyalar</span>
+                                </div>
+                                <div class="single-new-category-categories">
+                                    <ul class="d-flex flex-wrap">
+                                        <li>
+                                            <a href="">Qadın qarderobu </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Kişi qarderobu </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Uşaq qarderobu </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Uşaq məhsulları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Telefonlar və planşetlər </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Telefonlar və planşetlər </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Uşaq qarderobu </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Telefonlar və planşetlər </a>
+                                        </li>
+    
+    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-new-categoryy d-flex">
+                            <div class="single-new-category-icon">
+                                <span>
+                                    <img class="w-100 h-100" src="assets/images/icon-cat-services5x.png" alt="">
+                                </span>
+                            </div>
+                            <div class="ml-3" style="border-bottom: 1px solid rgba(0,0,0,.1);padding: 10px 0px;">
+                                <div class="single-new-category-header">
+                                    <span>Предложить свои услуги</span>
+                                </div>
+                                <div class="single-new-category-categories">
+                                    <ul class="d-flex flex-wrap">
+                                        <li>
+                                            <a href="">Обучение</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Мастер на час</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Красота и здоровье</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Ремонт и строительство</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Компьютерные услуги </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Деловые услуги</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Автоуслуги</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Уход за животными</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Организация праздников</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Уборка</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Другое</a>
+                                        </li>
+                                        <li>
+                                                <a href="">Уборка</a>
+                                            </li>
+    
+    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-new-categoryy d-flex">
+                                <div class="single-new-category-icon">
+                                    <span>
+                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="ml-3" style="border-bottom: 1px solid rgba(0,0,0,.1);padding: 10px 0px;">
+                                    <div class="single-new-category-header">
+                                        <span>Elektronika və əşyalar</span>
+                                    </div>
+                                    <div class="single-new-category-categories">
+                                        <ul class="d-flex flex-wrap">
+                                            <li>
+                                                <a href="">Qadın qarderobu </a>
+                                            </li>
+                                            <li>
+                                                <a href="">Kişi qarderobu </a>
+                                            </li>
+                                            <li>
+                                                <a href="">Uşaq qarderobu </a>
+                                            </li>
+                                            <li>
+                                                <a href="">Uşaq məhsulları</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Telefonlar və planşetlər </a>
+                                            </li>
+                                            <li>
+                                                <a href="">Telefonlar və planşetlər </a>
+                                            </li>
+                                            <li>
+                                                <a href="">Uşaq qarderobu </a>
+                                            </li>
+                                            <li>
+                                                <a href="">Telefonlar və planşetlər </a>
+                                            </li>
+        
+        
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-new-categoryy d-flex">
+                                <div class="single-new-category-icon">
+                                    <span>
+                                        <img class="w-100 h-100" src="assets/images/icon-cat-services5x.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="ml-3" style="border-bottom: 1px solid rgba(0,0,0,.1);padding: 10px 0px;">
+                                    <div class="single-new-category-header">
+                                        <span>Предложить свои услуги</span>
+                                    </div>
+                                    <div class="single-new-category-categories">
+                                        <ul class="d-flex flex-wrap">
+                                            <li>
+                                                <a href="">Обучение</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Мастер на час</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Красота и здоровье</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Ремонт и строительство</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Компьютерные услуги </a>
+                                            </li>
+                                            <li>
+                                                <a href="">Деловые услуги</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Автоуслуги</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Уход за животными</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Организация праздников</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Уборка</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Другое</a>
+                                            </li>
+                                            <li>
+                                                    <a href="">Уборка</a>
+                                                </li>
+        
+        
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-new-categoryy d-flex">
+                                    <div class="single-new-category-icon">
+                                        <span>
+                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="ml-3" style="border-bottom: 1px solid rgba(0,0,0,.1);padding: 10px 0px;">
+                                        <div class="single-new-category-header">
+                                            <span>Elektronika və əşyalar</span>
+                                        </div>
+                                        <div class="single-new-category-categories">
+                                            <ul class="d-flex flex-wrap">
+                                                <li>
+                                                    <a href="">Qadın qarderobu </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Kişi qarderobu </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Uşaq qarderobu </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Uşaq məhsulları</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Telefonlar və planşetlər </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Telefonlar və planşetlər </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Uşaq qarderobu </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Telefonlar və planşetlər </a>
+                                                </li>
+            
+            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-new-categoryy d-flex">
+                                    <div class="single-new-category-icon">
+                                        <span>
+                                            <img class="w-100 h-100" src="assets/images/icon-cat-services5x.png" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="ml-3" style="border-bottom: 1px solid rgba(0,0,0,.1);padding: 10px 0px;">
+                                        <div class="single-new-category-header">
+                                            <span>Предложить свои услуги</span>
+                                        </div>
+                                        <div class="single-new-category-categories">
+                                            <ul class="d-flex flex-wrap">
+                                                <li>
+                                                    <a href="">Обучение</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Мастер на час</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Красота и здоровье</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Ремонт и строительство</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Компьютерные услуги </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Деловые услуги</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Автоуслуги</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Уход за животными</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Организация праздников</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Уборка</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Другое</a>
+                                                </li>
+                                                <li>
+                                                        <a href="">Уборка</a>
+                                                    </li>
+            
+            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                 </div>
 
-                <div class="col-lg-3 d-lg-block d-none p-0" style="padding-left: 20px !important">
-                    <div class="inside-filter-right-side">
-                    <form action="">
-                        <div class="input-multi-select mb-2" style="height:40px;">
-                            <div class="h-100 w-100 select-optionn select-options-multiselect">
-                                <select class="h-100 w-100">
-                                    <option disabled selected value="Brend">Brend</option>
-                                </select>
-                                <div class="overSelect"></div>
-                                <!-- <i class="fa fa-caret-down "></i> -->
-                                <svg class="down-iconn" width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M11.986 13.49l4.236-4.512.729.685-4.965 5.288-4.964-5.288.729-.685z"
-                                        fill="#333" fill-rule="evenodd"></path>
-                                </svg>
-                            </div>
-                            <div class="checkboxes-multi d-none">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Brend 1</label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                    <label class="custom-control-label" for="customCheck2">Brend 2</label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                    <label class="custom-control-label" for="customCheck3">Brend 3</label>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="min-max-input-part mb-2">
-                            <div style="height:40px" class="item-price-section mb-2">
-                                <div class="filter-fields-style">
-                                    <div class="h-100 w-100 select-optionn">
-                                        <div>Qiymət</div>
-                                        <svg class="down-iconn" width="24" height="24" viewBox="0 0 24 24">
-                                            <path
-                                                d="M11.986 13.49l4.236-4.512.729.685-4.965 5.288-4.964-5.288.729-.685z"
-                                                fill="#333" fill-rule="evenodd"></path>
-                                        </svg>
+
+                <!-- .........................for-mobile................................. -->
+
+                <div class="mobile-all-new-categoriess d-md-none d-block">
+                        <ul class="size-desktop ">        
+                                <li class="ul-menu-list ul-menu-list-first-new-product">
+                                    <a class="d-flex align-items-center justify-content-between first-list-link-new-product" href="javascript:void(0)">
+                                        <div class="d-flex align-items-center ">
+                                            <div class="mobile-list-icon">
+                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                            </div>
+                                            <div class="ml-2 mobile-list-name">Elektronika və əşyalar</div>
+                                        </div>
+                                    </a>
+                                    <div class="mobile-menu-second-list-new-product d-md-none d-block">
+                                        <div style="box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;height: 48px" class="d-flex align-items-center justify-content-center">
+                                            <div class="size-desktop d-flex align-items-center">
+                                                <div class="d-flex align-items-center mobile-exit-icon-second" style="position: absolute;width: 23px;height: 23px;">
+                                                    <div class="mobile-left-icon-new-product">
+                                                        <svg style="transform: rotate(180deg);" width="24" height="24" viewBox="0 0 24 24" class="sc-jMpswA dlIspE">
+                                                            <path fill="#333" d="M15.635 12.022l-7.58-7.26.69-.723 8.335 7.982-8.334 7.995-.692-.722z">
+                                                            </path>
+                                                        </svg>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 text-center">Elektronika və əşyalar</div>
+                                            </div>
+                                        </div>
+                
+                                        <ul class="size-desktop ">
+                                            <li class="ul-menu-list all-categories">
+                                                <a class="d-flex align-items-center" href="">
+                                                    <div class="mobile-list-icon">
+                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                    </div>
+                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                </a>
+                                            </li>
+                                            <li class="ul-menu-list all-categories">
+                                                    <a class="d-flex align-items-center" href="">
+                                                        <div class="mobile-list-icon">
+                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                        </div>
+                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                    </a>
+                                                </li>
+                                                <li class="ul-menu-list all-categories">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <div class="mobile-list-icon">
+                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                            </div>
+                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ul-menu-list all-categories">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <div class="mobile-list-icon">
+                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                </div>
+                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="ul-menu-list all-categories">
+                                                                <a class="d-flex align-items-center" href="">
+                                                                    <div class="mobile-list-icon">
+                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                    </div>
+                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="ul-menu-list all-categories">
+                                                                    <a class="d-flex align-items-center" href="">
+                                                                        <div class="mobile-list-icon">
+                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                        </div>
+                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="ul-menu-list all-categories">
+                                                                        <a class="d-flex align-items-center" href="">
+                                                                            <div class="mobile-list-icon">
+                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                            </div>
+                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                        </a>
+                                                                    </li>
+                                        </ul>
+                
+                
                                     </div>
-                                </div>
-                            </div>
+                
+                                </li>
 
-                            <div class="min-max-input d-none">
-                                <div class="col-6 pr-0">
-                                    <input placeholder="min" class="w-100" type="text">
-                                </div>
-                                <div class="col-6 pl-0">
-                                    <input placeholder="max" class="w-100" type="text">
-                                </div>
-                            </div>
-                        </div>
+                                <li class="ul-menu-list ul-menu-list-first-new-product">
+                                        <a class="d-flex align-items-center justify-content-between first-list-link-new-product" href="javascript:void(0)">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="mobile-list-icon">
+                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                </div>
+                                                <div class="ml-2 mobile-list-name">Elektronika və əşyalar</div>
+                                            </div>
+                                        </a>
+                                        <div class="mobile-menu-second-list-new-product d-md-none d-block">
+                                            <div style="box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;height: 48px" class="d-flex align-items-center justify-content-center">
+                                                <div class="size-desktop d-flex align-items-center">
+                                                    <div class="d-flex align-items-center mobile-exit-icon-second" style="position: absolute;width: 23px;height: 23px;">
+                                                        <div class="mobile-left-icon-new-product">
+                                                            <svg style="transform: rotate(180deg);" width="24" height="24" viewBox="0 0 24 24" class="sc-jMpswA dlIspE">
+                                                                <path fill="#333" d="M15.635 12.022l-7.58-7.26.69-.723 8.335 7.982-8.334 7.995-.692-.722z">
+                                                                </path>
+                                                            </svg>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100 text-center">Elektronika və əşyalar</div>
+                                                </div>
+                                            </div>
+                    
+                                            <ul class="size-desktop ">
+                                                <li class="ul-menu-list all-categories">
+                                                    <a class="d-flex align-items-center" href="">
+                                                        <div class="mobile-list-icon">
+                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                        </div>
+                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                    </a>
+                                                </li>
+                                                <li class="ul-menu-list all-categories">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <div class="mobile-list-icon">
+                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                            </div>
+                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ul-menu-list all-categories">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <div class="mobile-list-icon">
+                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                </div>
+                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="ul-menu-list all-categories">
+                                                                <a class="d-flex align-items-center" href="">
+                                                                    <div class="mobile-list-icon">
+                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                    </div>
+                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="ul-menu-list all-categories">
+                                                                    <a class="d-flex align-items-center" href="">
+                                                                        <div class="mobile-list-icon">
+                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                        </div>
+                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="ul-menu-list all-categories">
+                                                                        <a class="d-flex align-items-center" href="">
+                                                                            <div class="mobile-list-icon">
+                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                            </div>
+                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="ul-menu-list all-categories">
+                                                                            <a class="d-flex align-items-center" href="">
+                                                                                <div class="mobile-list-icon">
+                                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                </div>
+                                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                            </a>
+                                                                        </li>
+                                            </ul>
+                    
+                    
+                                        </div>
+                    
+                                    </li>
 
-                        <div class="d-flex justify-content-between align-items-center mb-2 filter-fields-style"
-                            style="height:40px;">
-                            <div>Endirimdə olanlar</div>
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                <label class="custom-control-label" for="customSwitch1"></label>
-                            </div>
-                        </div>
+                                    <li class="ul-menu-list ul-menu-list-first-new-product">
+                                            <a class="d-flex align-items-center justify-content-between first-list-link-new-product" href="javascript:void(0)">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="mobile-list-icon">
+                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                    </div>
+                                                    <div class="ml-2 mobile-list-name">Elektronika və əşyalar</div>
+                                                </div>
+                                            </a>
+                                            <div class="mobile-menu-second-list-new-product d-md-none d-block">
+                                                <div style="box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;height: 48px" class="d-flex align-items-center justify-content-center">
+                                                    <div class="size-desktop d-flex align-items-center">
+                                                        <div class="d-flex align-items-center mobile-exit-icon-second" style="position: absolute;width: 23px;height: 23px;">
+                                                            <div class="mobile-left-icon-new-product">
+                                                                <svg style="transform: rotate(180deg);" width="24" height="24" viewBox="0 0 24 24" class="sc-jMpswA dlIspE">
+                                                                    <path fill="#333" d="M15.635 12.022l-7.58-7.26.69-.723 8.335 7.982-8.334 7.995-.692-.722z">
+                                                                    </path>
+                                                                </svg>
+                        
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-100 text-center">Elektronika və əşyalar</div>
+                                                    </div>
+                                                </div>
+                        
+                                                <ul class="size-desktop ">
+                                                    <li class="ul-menu-list all-categories">
+                                                        <a class="d-flex align-items-center" href="">
+                                                            <div class="mobile-list-icon">
+                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                            </div>
+                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ul-menu-list all-categories">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <div class="mobile-list-icon">
+                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                </div>
+                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="ul-menu-list all-categories">
+                                                                <a class="d-flex align-items-center" href="">
+                                                                    <div class="mobile-list-icon">
+                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                    </div>
+                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="ul-menu-list all-categories">
+                                                                    <a class="d-flex align-items-center" href="">
+                                                                        <div class="mobile-list-icon">
+                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                        </div>
+                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="ul-menu-list all-categories">
+                                                                        <a class="d-flex align-items-center" href="">
+                                                                            <div class="mobile-list-icon">
+                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                            </div>
+                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="ul-menu-list all-categories">
+                                                                            <a class="d-flex align-items-center" href="">
+                                                                                <div class="mobile-list-icon">
+                                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                </div>
+                                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="ul-menu-list all-categories">
+                                                                                <a class="d-flex align-items-center" href="">
+                                                                                    <div class="mobile-list-icon">
+                                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                    </div>
+                                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                </a>
+                                                                            </li>
+                                                </ul>
+                        
+                        
+                                            </div>
+                        
+                                        </li>
 
+                                        <li class="ul-menu-list ul-menu-list-first-new-product">
+                                                <a class="d-flex align-items-center justify-content-between first-list-link-new-product" href="javascript:void(0)">
+                                                    <div class="d-flex align-items-center ">
+                                                        <div class="mobile-list-icon">
+                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                        </div>
+                                                        <div class="ml-2 mobile-list-name">Elektronika və əşyalar</div>
+                                                    </div>
+                                                </a>
+                                                <div class="mobile-menu-second-list-new-product d-md-none d-block">
+                                                    <div style="box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;height: 48px" class="d-flex align-items-center justify-content-center">
+                                                        <div class="size-desktop d-flex align-items-center">
+                                                            <div class="d-flex align-items-center mobile-exit-icon-second" style="position: absolute;width: 23px;height: 23px;">
+                                                                <div class="mobile-left-icon-new-product">
+                                                                    <svg style="transform: rotate(180deg);" width="24" height="24" viewBox="0 0 24 24" class="sc-jMpswA dlIspE">
+                                                                        <path fill="#333" d="M15.635 12.022l-7.58-7.26.69-.723 8.335 7.982-8.334 7.995-.692-.722z">
+                                                                        </path>
+                                                                    </svg>
+                            
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-100 text-center">Elektronika və əşyalar</div>
+                                                        </div>
+                                                    </div>
+                            
+                                                    <ul class="size-desktop ">
+                                                        <li class="ul-menu-list all-categories">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <div class="mobile-list-icon">
+                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                </div>
+                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="ul-menu-list all-categories">
+                                                                <a class="d-flex align-items-center" href="">
+                                                                    <div class="mobile-list-icon">
+                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                    </div>
+                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="ul-menu-list all-categories">
+                                                                    <a class="d-flex align-items-center" href="">
+                                                                        <div class="mobile-list-icon">
+                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                        </div>
+                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="ul-menu-list all-categories">
+                                                                        <a class="d-flex align-items-center" href="">
+                                                                            <div class="mobile-list-icon">
+                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                            </div>
+                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="ul-menu-list all-categories">
+                                                                            <a class="d-flex align-items-center" href="">
+                                                                                <div class="mobile-list-icon">
+                                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                </div>
+                                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="ul-menu-list all-categories">
+                                                                                <a class="d-flex align-items-center" href="">
+                                                                                    <div class="mobile-list-icon">
+                                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                    </div>
+                                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="ul-menu-list all-categories">
+                                                                                    <a class="d-flex align-items-center" href="">
+                                                                                        <div class="mobile-list-icon">
+                                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                        </div>
+                                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                    </a>
+                                                                                </li>
+                                                    </ul>
+                            
+                            
+                                                </div>
+                            
+                                            </li>
 
-                        <div style="height:40px;" class="apply-filterr">
-                            <button type="submit">Axtar</button>
-                        </div>
+                                            <li class="ul-menu-list ul-menu-list-first-new-product">
+                                                    <a class="d-flex align-items-center justify-content-between first-list-link-new-product" href="javascript:void(0)">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="mobile-list-icon">
+                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                            </div>
+                                                            <div class="ml-2 mobile-list-name">Elektronika və əşyalar</div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="mobile-menu-second-list-new-product d-md-none d-block">
+                                                        <div style="box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;height: 48px" class="d-flex align-items-center justify-content-center">
+                                                            <div class="size-desktop d-flex align-items-center">
+                                                                <div class="d-flex align-items-center mobile-exit-icon-second" style="position: absolute;width: 23px;height: 23px;">
+                                                                    <div class="mobile-left-icon-new-product">
+                                                                        <svg style="transform: rotate(180deg);" width="24" height="24" viewBox="0 0 24 24" class="sc-jMpswA dlIspE">
+                                                                            <path fill="#333" d="M15.635 12.022l-7.58-7.26.69-.723 8.335 7.982-8.334 7.995-.692-.722z">
+                                                                            </path>
+                                                                        </svg>
+                                
+                                                                    </div>
+                                                                </div>
+                                                                <div class="w-100 text-center">Elektronika və əşyalar</div>
+                                                            </div>
+                                                        </div>
+                                
+                                                        <ul class="size-desktop ">
+                                                            <li class="ul-menu-list all-categories">
+                                                                <a class="d-flex align-items-center" href="">
+                                                                    <div class="mobile-list-icon">
+                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                    </div>
+                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="ul-menu-list all-categories">
+                                                                    <a class="d-flex align-items-center" href="">
+                                                                        <div class="mobile-list-icon">
+                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                        </div>
+                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="ul-menu-list all-categories">
+                                                                        <a class="d-flex align-items-center" href="">
+                                                                            <div class="mobile-list-icon">
+                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                            </div>
+                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="ul-menu-list all-categories">
+                                                                            <a class="d-flex align-items-center" href="">
+                                                                                <div class="mobile-list-icon">
+                                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                </div>
+                                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="ul-menu-list all-categories">
+                                                                                <a class="d-flex align-items-center" href="">
+                                                                                    <div class="mobile-list-icon">
+                                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                    </div>
+                                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="ul-menu-list all-categories">
+                                                                                    <a class="d-flex align-items-center" href="">
+                                                                                        <div class="mobile-list-icon">
+                                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                        </div>
+                                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="ul-menu-list all-categories">
+                                                                                        <a class="d-flex align-items-center" href="">
+                                                                                            <div class="mobile-list-icon">
+                                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                            </div>
+                                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                        </a>
+                                                                                    </li>
+                                                        </ul>
+                                
+                                
+                                                    </div>
+                                
+                                                </li>
 
-                    </form>
-                </div>
+                                                <li class="ul-menu-list ul-menu-list-first-new-product">
+                                                        <a class="d-flex align-items-center justify-content-between first-list-link-new-product" href="javascript:void(0)">
+                                                            <div class="d-flex align-items-center ">
+                                                                <div class="mobile-list-icon">
+                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                </div>
+                                                                <div class="ml-2 mobile-list-name">Elektronika və əşyalar</div>
+                                                            </div>
+                                                        </a>
+                                                        <div class="mobile-menu-second-list-new-product d-md-none d-block">
+                                                            <div style="box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;height: 48px" class="d-flex align-items-center justify-content-center">
+                                                                <div class="size-desktop d-flex align-items-center">
+                                                                    <div class="d-flex align-items-center mobile-exit-icon-second" style="position: absolute;width: 23px;height: 23px;">
+                                                                        <div class="mobile-left-icon-new-product">
+                                                                            <svg style="transform: rotate(180deg);" width="24" height="24" viewBox="0 0 24 24" class="sc-jMpswA dlIspE">
+                                                                                <path fill="#333" d="M15.635 12.022l-7.58-7.26.69-.723 8.335 7.982-8.334 7.995-.692-.722z">
+                                                                                </path>
+                                                                            </svg>
+                                    
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="w-100 text-center">Elektronika və əşyalar</div>
+                                                                </div>
+                                                            </div>
+                                    
+                                                            <ul class="size-desktop ">
+                                                                <li class="ul-menu-list all-categories">
+                                                                    <a class="d-flex align-items-center" href="">
+                                                                        <div class="mobile-list-icon">
+                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                        </div>
+                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="ul-menu-list all-categories">
+                                                                        <a class="d-flex align-items-center" href="">
+                                                                            <div class="mobile-list-icon">
+                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                            </div>
+                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="ul-menu-list all-categories">
+                                                                            <a class="d-flex align-items-center" href="">
+                                                                                <div class="mobile-list-icon">
+                                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                </div>
+                                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="ul-menu-list all-categories">
+                                                                                <a class="d-flex align-items-center" href="">
+                                                                                    <div class="mobile-list-icon">
+                                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                    </div>
+                                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="ul-menu-list all-categories">
+                                                                                    <a class="d-flex align-items-center" href="">
+                                                                                        <div class="mobile-list-icon">
+                                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                        </div>
+                                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="ul-menu-list all-categories">
+                                                                                        <a class="d-flex align-items-center" href="">
+                                                                                            <div class="mobile-list-icon">
+                                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                            </div>
+                                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="ul-menu-list all-categories">
+                                                                                            <a class="d-flex align-items-center" href="">
+                                                                                                <div class="mobile-list-icon">
+                                                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                                </div>
+                                                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                            </a>
+                                                                                        </li>
+                                                            </ul>
+                                    
+                                    
+                                                        </div>
+                                    
+                                                    </li>
 
+                                                    <li class="ul-menu-list ul-menu-list-first-new-product">
+                                                            <a class="d-flex align-items-center justify-content-between first-list-link-new-product" href="javascript:void(0)">
+                                                                <div class="d-flex align-items-center ">
+                                                                    <div class="mobile-list-icon">
+                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                    </div>
+                                                                    <div class="ml-2 mobile-list-name">Elektronika və əşyalar</div>
+                                                                </div>
+                                                            </a>
+                                                            <div class="mobile-menu-second-list-new-product d-md-none d-block">
+                                                                <div style="box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;height: 48px" class="d-flex align-items-center justify-content-center">
+                                                                    <div class="size-desktop d-flex align-items-center">
+                                                                        <div class="d-flex align-items-center mobile-exit-icon-second" style="position: absolute;width: 23px;height: 23px;">
+                                                                            <div class="mobile-left-icon-new-product">
+                                                                                <svg style="transform: rotate(180deg);" width="24" height="24" viewBox="0 0 24 24" class="sc-jMpswA dlIspE">
+                                                                                    <path fill="#333" d="M15.635 12.022l-7.58-7.26.69-.723 8.335 7.982-8.334 7.995-.692-.722z">
+                                                                                    </path>
+                                                                                </svg>
+                                        
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="w-100 text-center">Elektronika və əşyalar</div>
+                                                                    </div>
+                                                                </div>
+                                        
+                                                                <ul class="size-desktop ">
+                                                                    <li class="ul-menu-list all-categories">
+                                                                        <a class="d-flex align-items-center" href="">
+                                                                            <div class="mobile-list-icon">
+                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                            </div>
+                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="ul-menu-list all-categories">
+                                                                            <a class="d-flex align-items-center" href="">
+                                                                                <div class="mobile-list-icon">
+                                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                </div>
+                                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="ul-menu-list all-categories">
+                                                                                <a class="d-flex align-items-center" href="">
+                                                                                    <div class="mobile-list-icon">
+                                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                    </div>
+                                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="ul-menu-list all-categories">
+                                                                                    <a class="d-flex align-items-center" href="">
+                                                                                        <div class="mobile-list-icon">
+                                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                        </div>
+                                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="ul-menu-list all-categories">
+                                                                                        <a class="d-flex align-items-center" href="">
+                                                                                            <div class="mobile-list-icon">
+                                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                            </div>
+                                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="ul-menu-list all-categories">
+                                                                                            <a class="d-flex align-items-center" href="">
+                                                                                                <div class="mobile-list-icon">
+                                                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                                </div>
+                                                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li class="ul-menu-list all-categories">
+                                                                                                <a class="d-flex align-items-center" href="">
+                                                                                                    <div class="mobile-list-icon">
+                                                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                                    </div>
+                                                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                                </a>
+                                                                                            </li>
+                                                                </ul>
+                                        
+                                        
+                                                            </div>
+                                        
+                                                        </li>
+
+                                                        <li class="ul-menu-list ul-menu-list-first-new-product">
+                                                                <a class="d-flex align-items-center justify-content-between first-list-link-new-product" href="javascript:void(0)">
+                                                                    <div class="d-flex align-items-center ">
+                                                                        <div class="mobile-list-icon">
+                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                        </div>
+                                                                        <div class="ml-2 mobile-list-name">Elektronika və əşyalar</div>
+                                                                    </div>
+                                                                </a>
+                                                                <div class="mobile-menu-second-list-new-product d-md-none d-block">
+                                                                    <div style="box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;height: 48px" class="d-flex align-items-center justify-content-center">
+                                                                        <div class="size-desktop d-flex align-items-center">
+                                                                            <div class="d-flex align-items-center mobile-exit-icon-second" style="position: absolute;width: 23px;height: 23px;">
+                                                                                <div class="mobile-left-icon-new-product">
+                                                                                    <svg style="transform: rotate(180deg);" width="24" height="24" viewBox="0 0 24 24" class="sc-jMpswA dlIspE">
+                                                                                        <path fill="#333" d="M15.635 12.022l-7.58-7.26.69-.723 8.335 7.982-8.334 7.995-.692-.722z">
+                                                                                        </path>
+                                                                                    </svg>
+                                            
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="w-100 text-center">Elektronika və əşyalar</div>
+                                                                        </div>
+                                                                    </div>
+                                            
+                                                                    <ul class="size-desktop ">
+                                                                        <li class="ul-menu-list all-categories">
+                                                                            <a class="d-flex align-items-center" href="">
+                                                                                <div class="mobile-list-icon">
+                                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                </div>
+                                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="ul-menu-list all-categories">
+                                                                                <a class="d-flex align-items-center" href="">
+                                                                                    <div class="mobile-list-icon">
+                                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                    </div>
+                                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="ul-menu-list all-categories">
+                                                                                    <a class="d-flex align-items-center" href="">
+                                                                                        <div class="mobile-list-icon">
+                                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                        </div>
+                                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="ul-menu-list all-categories">
+                                                                                        <a class="d-flex align-items-center" href="">
+                                                                                            <div class="mobile-list-icon">
+                                                                                                    <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                            </div>
+                                                                                            <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="ul-menu-list all-categories">
+                                                                                            <a class="d-flex align-items-center" href="">
+                                                                                                <div class="mobile-list-icon">
+                                                                                                        <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                                </div>
+                                                                                                <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li class="ul-menu-list all-categories">
+                                                                                                <a class="d-flex align-items-center" href="">
+                                                                                                    <div class="mobile-list-icon">
+                                                                                                            <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                                    </div>
+                                                                                                    <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li class="ul-menu-list all-categories">
+                                                                                                    <a class="d-flex align-items-center" href="">
+                                                                                                        <div class="mobile-list-icon">
+                                                                                                                <img class="w-100 h-100" src="assets/images/icon-cat-stuff5x.png" alt="">
+                                                                                                        </div>
+                                                                                                        <div class="ml-1 mobile-list-name">Qadın qarderobu </div>
+                                                                                                    </a>
+                                                                                                </li>
+                                                                    </ul>
+                                            
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                
+                            </ul>
                 </div>
             </div>
         </section>
@@ -1482,133 +2051,6 @@
 
     </div>
 
-
-    <!-- ...................for-filter................................. -->
-
-    <div class="mobile-category-filter-list d-lg-none d-block">
-        <div style="box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;height: 48px"
-            class="d-flex align-items-center justify-content-center">
-            <div class="size-desktop d-flex align-items-center">
-                <div class="d-flex align-items-center category-filter-exit-icon"
-                    style="position: absolute;width: 23px;height: 23px;">
-                    <div class="">
-                        <div class="menu-icon-1 x-1 xx-1 m-0"><svg class="position-absolute" style="top: 0;left:0"
-                                width="24" height="5">
-                                <path stroke="rgb(57, 57, 57)" stroke-width="2" d="M0 5h24"></path>
-                            </svg></div>
-                        <div class="menu-icon-1 menu-icon-2 x-4 xx-4"><svg class="position-absolute"
-                                style="top: 0;left:0" width="24" height="5">
-                                <path stroke="rgb(57, 57, 57)" stroke-width="2" d="M0 5h24"></path>
-                            </svg></div>
-
-                    </div>
-                </div>
-                <div class="w-100 text-center">Filter</div>
-            </div>
-        </div>
-        <ul class="size-desktop ">
-            <form class="mt-2" action="">
-                    <div class="d-flex justify-content-between align-items-center mb-2 filter-fields-style"
-                    style="height:40px;padding-right:10px">
-                    <div>Görünüş</div>
-                    <div class="d-flex align-items-center">
-                            <div class="items-view-four">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" class="">
-                                        <path fill="#7092FE" fill-rule="evenodd" d="M9 13a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4zm10 0a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4zM9 14H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1zm10 0h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1zM9 3a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4zm10 0a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4zM9 4H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm10 0h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="ml-2 items-view-one">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" class="">
-                                            <path fill="#333" fill-rule="evenodd" d="M6.077 14c.669 0 .911.07 1.156.2.244.131.436.323.567.567.13.245.2.487.2 1.156v1.154c0 .669-.07.911-.2 1.156a1.371 1.371 0 0 1-.567.567c-.245.13-.487.2-1.156.2H4.923c-.669 0-.911-.07-1.156-.2a1.363 1.363 0 0 1-.567-.567c-.13-.245-.2-.487-.2-1.156v-1.154c0-.669.07-.911.2-1.156.131-.244.323-.436.567-.567.245-.13.487-.2 1.156-.2h1.154zm.14 1H4.924c-.459 0-.57.022-.684.082a.364.364 0 0 0-.157.157c-.054.1-.077.2-.081.543L4 17.077c0 .459.022.57.082.684.038.07.087.12.157.157.113.06.225.082.684.082h1.154c.459 0 .57-.022.684-.082a.364.364 0 0 0 .157-.157c.06-.113.082-.225.082-.684v-1.154c0-.459-.022-.57-.082-.684a.364.364 0 0 0-.157-.157c-.1-.054-.2-.077-.543-.081zM21 16v1H10v-1h11zM6.077 5c.669 0 .911.07 1.156.2.244.131.436.323.567.567.13.245.2.487.2 1.156v1.154c0 .669-.07.911-.2 1.156a1.371 1.371 0 0 1-.567.567c-.245.13-.487.2-1.156.2H4.923c-.669 0-.911-.07-1.156-.2a1.363 1.363 0 0 1-.567-.567c-.13-.245-.2-.487-.2-1.156V6.923c0-.669.07-.911.2-1.156.131-.244.323-.436.567-.567.245-.13.487-.2 1.156-.2h1.154zm.14 1H4.924c-.459 0-.57.022-.684.082a.364.364 0 0 0-.157.157c-.054.1-.077.2-.081.543L4 8.077c0 .459.022.57.082.684.038.07.087.12.157.157.113.06.225.082.684.082h1.154c.459 0 .57-.022.684-.082a.364.364 0 0 0 .157-.157c.06-.113.082-.225.082-.684V6.923c0-.459-.022-.57-.082-.684a.364.364 0 0 0-.157-.157c-.1-.054-.2-.077-.543-.081zM21 7v1H10V7h11z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                    </div>
-                </div>
-
-
-                <div class="input-multi-select mb-2" style="height:40px;">
-                    <div class="h-100 w-100 select-optionn select-options-multiselect">
-                        <select class="h-100 w-100">
-                            <option disabled="" selected="" value="Brend">Brend</option>
-                        </select>
-                        <div class="overSelect"></div>
-                        <!-- <i class="fa fa-caret-down "></i> -->
-                        <svg class="down-iconn" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M11.986 13.49l4.236-4.512.729.685-4.965 5.288-4.964-5.288.729-.685z" fill="#333"
-                                fill-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <div class="checkboxes-multi d-none">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1-mobile">
-                            <label class="custom-control-label" for="customCheck1--mobile">Brend 1</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck2-mobile">
-                            <label class="custom-control-label" for="customCheck2-mobile">Brend 2</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck3-mobile">
-                            <label class="custom-control-label" for="customCheck3-mobile">Brend 3</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="min-max-input-part mb-2">
-                    <div style="height:40px" class="item-price-section mb-2">
-                        <div class="filter-fields-style">
-                            <div class="h-100 w-100 select-optionn">
-                                <div>Qiymət</div>
-                                <svg class="down-iconn" width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M11.986 13.49l4.236-4.512.729.685-4.965 5.288-4.964-5.288.729-.685z"
-                                        fill="#333" fill-rule="evenodd"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="min-max-input d-none">
-                        <div class="col-6 pr-0">
-                            <input placeholder="min" class="w-100" type="text">
-                        </div>
-                        <div class="col-6 pl-0">
-                            <input placeholder="max" class="w-100" type="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center mb-2 filter-fields-style"
-                    style="height:40px;">
-                    <div>Endirimdə olanlar</div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch1-mobile">
-                        <label class="custom-control-label" for="customSwitch1-mobile"></label>
-                    </div>
-                </div>
-
-
-                <div style="height:40px;" class="apply-filterr">
-                    <button type="submit">Axtar</button>
-                </div>
-
-            </form>
-
-        </ul>
-
-    </div>
-
-
-        <!-- ....................mobile-create-product-link.............................. -->
-        <section class="mobile-create-product">
-                <div>
-                    <a href="">Elan yerləşdirin</a>
-                </div>
-            </section>
-
-
-
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -1616,7 +2058,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/category.js"></script>
+    <script src="assets/js/new-product.js"></script>
 
 </body>
 

@@ -5,6 +5,11 @@
 * Browsers: last 4 version
 */
 
+html{
+    overflow-x:visible !important;
+}
+
+
 .productt-add-save{
     display: -webkit-box;
     display: -ms-flexbox;
