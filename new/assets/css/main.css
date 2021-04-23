@@ -204,8 +204,12 @@
     position: fixed;
     bottom: 0;
     z-index: 2000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
 }
 
@@ -214,6 +218,8 @@
     opacity: 1;
     visibility: visible;
     max-height: 1000px;
+    -webkit-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
     transition: 0.5s ease all;
     display: none;
 }
@@ -228,14 +234,21 @@
 .mobile-create-product a{
     background: #7092fe;
     color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
     height: 32px;
     padding: 4px 15px;
     border-radius: 8px;
     white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
     transition: 0.2s ease all;
 }
 
