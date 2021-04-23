@@ -270,9 +270,9 @@ body{
         display: block;
     }
     .personal-informationn-right{
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: end;
+        -webkit-box-pack: end !important;
+            -ms-flex-pack: end !important;
+                justify-content: end !important;
     }
     .user-subs-info{
         -webkit-box-pack: center !important;
