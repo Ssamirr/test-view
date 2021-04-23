@@ -1,9 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body{
     overflow: hidden;
 }
 .user-profile-settings-img a{
     width: 72px;    
     height: 72px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -45,7 +54,9 @@ body{
 .personal-informationn-settings-list{
     padding: 16px 0px;
     border-bottom: 1px solid rgba(0,0,0,.1);
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
 }
 
@@ -61,14 +72,19 @@ body{
 .page-settings-right-side{
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
     padding: 24px 24px 8px 24px;
 }
 
 
 .personal-informationn-right{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
     white-space: nowrap;
 }
@@ -77,9 +93,15 @@ body{
     border: none;
     height: 24px;
     width: 24px;
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
     transition: 0.2s ease all;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .personal-informationn-right-img img{
@@ -125,6 +147,8 @@ body{
     color: white;
     margin: 0;
     width: calc((100% - 8px)/2);
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
     transition: 0.2s ease all;
 }
 
@@ -138,6 +162,8 @@ body{
     margin: 0;
     width: calc((100% - 8px)/2);
     margin-left: 8px;
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
     transition: 0.2s ease all;
 }
 
@@ -156,7 +182,9 @@ body{
 .sold-active-advertisements{
     font-size: 14px;
     margin-bottom: 10px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1px solid rgba(64, 72, 79, 0.05);
     height: 40px;
 }
@@ -191,7 +219,9 @@ body{
 .purchases-sales-orders{
     font-size: 14px;
     margin-bottom: 10px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1px solid rgba(64, 72, 79, 0.05);
     height: 40px;
 }
@@ -229,7 +259,8 @@ body{
     .page-settings-right-side{
         background-color: transparent;
         border-radius: 8px;
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
         padding: 24px 0px 24px 0px;
     }
     .change-info-buttons{
@@ -239,22 +270,30 @@ body{
         display: block;
     }
     .personal-informationn-right{
-        justify-content: end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
     }
     .user-subs-info{
-        justify-content: center !important;
+        -webkit-box-pack: center !important;
+            -ms-flex-pack: center !important;
+                justify-content: center !important;
     }
     .user-subs-countt{
         margin-right: 5px;
     }
     .list-sold-active-advertisements{
         width: calc(100%/2);
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .list-purchases-sales-orders{
         width: calc(100%/2);
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     
 }
