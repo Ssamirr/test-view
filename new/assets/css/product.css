@@ -181,7 +181,7 @@ html{
 
 .button-buy-product{
     padding: 4px 16px;
-    background: #77c026;
+    background: #49bd68;
     border-radius: 8px;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(255, 255, 255);
@@ -197,7 +197,7 @@ html{
 }
 
 .button-buy-product:hover{
-    background: rgb(129, 197, 55) none repeat scroll 0% 0%;
+    background: #3b994e;
 }
 
 .product-owner-message{
@@ -297,6 +297,71 @@ html{
     font-size: 23px !important;
     line-height: 1.4;
 }
+
+.product-comment-input{
+    height:120px;
+    margin-top: 10px;
+}
+
+.product-comment-input textarea{
+    width: 100%;
+    height: 100%;
+    padding: 3px 14px;
+}
+
+.new-product-added {
+    display: flex;
+    justify-content: center;
+}
+
+.new-product-added button {
+    display: block;
+    padding: 4px 15px 4px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #7092fe;
+    border-radius: 8px 8px 8px 8px;
+    border: none;
+    height: 32px;
+    transition: 0.2s ease all;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: white;
+    transition: 0.2s ease all;
+}
+
+.star-submit .fa-star{
+	font-size: 16px;
+	color: #dddddd;
+	cursor: pointer;
+	transition: 0.3s all;
+	margin: 0;
+}
+
+.for-star-radio{
+	display: none !important;
+}
+
+.for-star-radio:not(:checked) ~ .fa-star:hover,
+.for-star-radio:not(:checked) ~ .fa-star:hover ~ .fa-star{
+	color: #ffa700de;
+}
+
+.star-submit input:checked ~ label{
+	color: #ffa700de;
+}
+
+.star-submit{
+	direction: rtl;
+}
+
+.form-input-submit{
+    margin-top: 10px;
+}
+
+
 
 @media only screen and (max-width: 991px){
     /* .lSAction{

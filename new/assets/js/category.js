@@ -38,10 +38,13 @@ $(document).ready(function () {
         })
     }
 
+    var category_filter_exit_icon = document.querySelector('.category-filter-exit-icon')
+    if (category_filter_exit_icon) {
+        category_filter_exit_icon.addEventListener('click', function () {
+            document.querySelector('.mobile-category-filter-list').classList.remove('mobile-category-filter-list-show');
+        })
+    }
 
-    document.querySelector('.category-filter-exit-icon').addEventListener('click', function () {
-        document.querySelector('.mobile-category-filter-list').classList.remove('mobile-category-filter-list-show');
-    })
 
     document.querySelectorAll('.items-view-one').forEach(function (e) {
         e.addEventListener('click', function () {

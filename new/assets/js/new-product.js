@@ -4,6 +4,7 @@ $(document).ready(function () {
         e.addEventListener('click', function () {
             console.log('2')
             e.closest('.ul-menu-list-first-new-product').querySelector('.mobile-menu-second-list-new-product').classList.add('mobile-menu-second-new-product-list-show');
+            document.querySelector('html').classList.add('html-overflow-hidden');
         })
     })
 
@@ -11,61 +12,62 @@ $(document).ready(function () {
     document.querySelectorAll('.mobile-left-icon-new-product').forEach(function (e) {
         e.addEventListener('click', function () {
             this.closest('.mobile-menu-second-list-new-product').classList.remove('mobile-menu-second-new-product-list-show');
+            document.querySelector('html').classList.remove('html-overflow-hidden');
         })
     })
 
 
-    // ...................................additiona-images.............................
-    function newProductImg(){
-    var product_imagee = document.createElement('div');
-    product_imagee.classList.add('productt-image');
-    var product_imagee_div = document.createElement('div');
-    product_imagee_div.classList.add('w-100', 'h-100');
-    product_imagee.appendChild(product_imagee_div);
-    var product_imagee_img = document.createElement('img');
-    product_imagee_img.classList.add('w-100', 'h-100');
-    product_imagee_div.appendChild(product_imagee_img);
-    var product_image_change_deleted = document.createElement('div');
-    product_image_change_deleted.classList.add('product-image-change-delete', 'd-none');
-    product_imagee_div.appendChild(product_image_change_deleted);
-    var product_image_change_deleted_div = document.createElement('div');
-    product_image_change_deleted_div.classList.add('d-flex', 'w-100', 'justify-content-between');
-    product_image_change_deleted.appendChild(product_image_change_deleted_div);
-    var product_image_changeed = document.createElement('div');
-    product_image_changeed.setAttribute('title', 'Yenilə');
-    product_image_changeed.classList.add('product-image-changee');
-    product_image_changeed.setAttribute('onclick', 'productBackground(this)');
-    product_image_change_deleted_div.appendChild(product_image_changeed);
-    var product_image_changeed_icon = document.createElement('i');
-    product_image_changeed_icon.classList.add('fa', 'fa-refresh');
-    product_image_changeed_icon.setAttribute('aria-hidden', 'true');
-    product_image_changeed.appendChild(product_image_changeed_icon);
-    var product_image_deleteed = document.createElement('div');
-    product_image_deleteed.setAttribute('title', 'Sil');
-    product_image_deleteed.classList.add('product-image-deletee');
-    product_image_deleteed.setAttribute('onclick', 'productImgDelete(this)');
-    product_image_change_deleted_div.appendChild(product_image_deleteed);
-    var product_image_deleteed_icon = document.createElement('i');
-    product_image_deleteed_icon.classList.add('fa', 'fa-close');
-    product_image_deleteed_icon.setAttribute('aria-hidden', 'true');
-    product_image_deleteed.appendChild(product_image_deleteed_icon);
-    var product_img_backgroundd = document.createElement('div');
-    product_img_backgroundd.classList.add('product-img-background');
-    product_img_backgroundd.setAttribute('onclick', 'productBackground(this)');
-    product_imagee_div.appendChild(product_img_backgroundd);
-    var product_img_backgroundd_icon = document.createElement('i');
-    product_img_backgroundd_icon.classList.add('fas', 'fa-camera');
-    product_img_backgroundd_icon.setAttribute('aria-hidden', 'true');
-    product_img_backgroundd.appendChild(product_img_backgroundd_icon);
-    var product_img_backgroundd_div = document.createElement('div');
-    product_img_backgroundd_div.classList.add('add-imgg');
-    product_img_backgroundd_div.innerHTML = 'Əlavə et';
-    product_img_backgroundd.appendChild(product_img_backgroundd_div);
-    var product_imagee_input = document.createElement('input');
-    product_imagee_input.setAttribute('type', 'file');
-    product_imagee_input.setAttribute('onchange', 'productImgChange(this)')
-    product_imagee_div.appendChild(product_imagee_input);
-    document.querySelector('.new-product-images').appendChild(product_imagee);
+    // ...................................additional-images.............................
+    function newProductImg() {
+        var product_imagee = document.createElement('div');
+        product_imagee.classList.add('productt-image');
+        var product_imagee_div = document.createElement('div');
+        product_imagee_div.classList.add('w-100', 'h-100');
+        product_imagee.appendChild(product_imagee_div);
+        var product_imagee_img = document.createElement('img');
+        product_imagee_img.classList.add('w-100', 'h-100');
+        product_imagee_div.appendChild(product_imagee_img);
+        var product_image_change_deleted = document.createElement('div');
+        product_image_change_deleted.classList.add('product-image-change-delete', 'd-none');
+        product_imagee_div.appendChild(product_image_change_deleted);
+        var product_image_change_deleted_div = document.createElement('div');
+        product_image_change_deleted_div.classList.add('d-flex', 'w-100', 'justify-content-between');
+        product_image_change_deleted.appendChild(product_image_change_deleted_div);
+        var product_image_changeed = document.createElement('div');
+        product_image_changeed.setAttribute('title', 'Yenilə');
+        product_image_changeed.classList.add('product-image-changee');
+        product_image_changeed.setAttribute('onclick', 'productBackground(this)');
+        product_image_change_deleted_div.appendChild(product_image_changeed);
+        var product_image_changeed_icon = document.createElement('i');
+        product_image_changeed_icon.classList.add('fa', 'fa-refresh');
+        product_image_changeed_icon.setAttribute('aria-hidden', 'true');
+        product_image_changeed.appendChild(product_image_changeed_icon);
+        var product_image_deleteed = document.createElement('div');
+        product_image_deleteed.setAttribute('title', 'Sil');
+        product_image_deleteed.classList.add('product-image-deletee');
+        product_image_deleteed.setAttribute('onclick', 'productImgDelete(this)');
+        product_image_change_deleted_div.appendChild(product_image_deleteed);
+        var product_image_deleteed_icon = document.createElement('i');
+        product_image_deleteed_icon.classList.add('fa', 'fa-close');
+        product_image_deleteed_icon.setAttribute('aria-hidden', 'true');
+        product_image_deleteed.appendChild(product_image_deleteed_icon);
+        var product_img_backgroundd = document.createElement('div');
+        product_img_backgroundd.classList.add('product-img-background');
+        product_img_backgroundd.setAttribute('onclick', 'productBackground(this)');
+        product_imagee_div.appendChild(product_img_backgroundd);
+        var product_img_backgroundd_icon = document.createElement('i');
+        product_img_backgroundd_icon.classList.add('fas', 'fa-camera');
+        product_img_backgroundd_icon.setAttribute('aria-hidden', 'true');
+        product_img_backgroundd.appendChild(product_img_backgroundd_icon);
+        var product_img_backgroundd_div = document.createElement('div');
+        product_img_backgroundd_div.classList.add('add-imgg');
+        product_img_backgroundd_div.innerHTML = 'Əlavə et';
+        product_img_backgroundd.appendChild(product_img_backgroundd_div);
+        var product_imagee_input = document.createElement('input');
+        product_imagee_input.setAttribute('type', 'file');
+        product_imagee_input.setAttribute('onchange', 'productImgChange(this)')
+        product_imagee_div.appendChild(product_imagee_input);
+        document.querySelector('.new-product-images').appendChild(product_imagee);
     }
 
 
