@@ -304,6 +304,9 @@ body{
             -ms-flex-pack: center;
                 justify-content: center;
     }
+    .personal-informationn-left{
+        width: auto;
+    }
     
 }
 
