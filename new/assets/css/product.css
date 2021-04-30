@@ -376,10 +376,56 @@ html{
     opacity: 1;
     visibility: visible;
     max-height: 100px;
+    white-space: nowrap;
 }
 
 .product-owner-hidden-number a{
     color:white;
+}
+
+.user-comment-img{
+    width: 100px;
+    height: 100px;
+}
+
+.user-comment-img img{
+    border-radius:50%;
+}
+
+.user-comment-name a{
+    color: #333333;
+    opacity: 0.8;
+    font-size:16px;
+}
+
+.user-comment-name a:hover{
+    color:rgb(112, 146, 254);
+}
+
+.user-comment-added-time{
+    font-size:12px;
+    opacity:0.6;
+}
+
+.user-commentt{
+    margin-top: 10px;
+}
+
+.comment-product{
+    padding: 30px 0px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.user-comments-all{
+    margin-top: 20px;
+}
+
+.user-comment-starr i{
+    color: #dddddd;
+}
+
+.user-comment-starr .yellow-star{
+    color: #ffa700de;
 }
 
 
@@ -416,6 +462,19 @@ html{
 @media only screen and (max-width: 767px){
     #lightSlider {
         height: 272px !important;
+    }
+    .user-comment-img{
+        width: 50px;
+        height: 50px;
+    }
+    .user-comment-name a{
+        font-size: 14px;
+    }
+    .user-comment-added-time{
+        font-size: 10px;
+    }
+    .user-commentt{
+        font-size: 12px;
     }
 }
 
