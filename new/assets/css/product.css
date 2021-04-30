@@ -213,6 +213,10 @@ html{
     transition: 0.2s ease all;
 }
 
+.product-owner-message a{
+    color: rgb(112, 146, 254);
+}
+
 .product-owner-message:hover{
     background: rgb(237, 237, 237) none repeat scroll 0% 0%;
 }
@@ -361,6 +365,22 @@ html{
     margin-top: 10px;
 }
 
+.product-owner-showw-number,.product-owner-hidden-number{
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0px;
+    transition: 0.5s ease all;
+}
+
+.product-owner-showw-number-show,.product-owner-hidden-number-show{
+    opacity: 1;
+    visibility: visible;
+    max-height: 100px;
+}
+
+.product-owner-hidden-number a{
+    color:white;
+}
 
 
 @media only screen and (max-width: 991px){

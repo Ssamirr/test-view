@@ -29,6 +29,14 @@ html{
     overflow-x:hidden;
 }
 
+*:focus {
+    outline: 0;
+}
+
+button{
+    outline: none !important;
+}
+
 .size-desktop{
     max-width: 1264px;
     min-width: 320px;

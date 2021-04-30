@@ -43,5 +43,12 @@ $(document).ready(function () {
         })
     })
 
+    document.querySelectorAll('.product-owner-showw-number').forEach(function(e){
+        e.addEventListener('click',function(){
+            e.classList.remove('product-owner-showw-number-show');
+            e.closest('.product-owner-number').querySelector('.product-owner-hidden-number').classList.add('product-owner-hidden-number-show');
+        })
+    })
+
 
 })
