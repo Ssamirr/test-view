@@ -262,6 +262,9 @@ body{
 
 
 @media only screen and (max-width: 991px){
+    .personal-informationn-right{
+        width: auto;
+    }
     .right-side-settings{
         padding-left: 0px !important;
     }
