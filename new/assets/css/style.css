@@ -223,3 +223,8 @@ input,textarea{
 .color-opacity{
     color: rgb(133, 133, 133);
 }
+
+.site-makerr{
+    text-decoration: underline !important;
+    color: rgb(51, 51, 51);
+}
